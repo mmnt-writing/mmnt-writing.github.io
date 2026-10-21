@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>개인정보 처리방침 - mmnt</title>
+  <meta name="description" content="mmnt가 어떤 데이터를 어디에 저장하고, 무엇을 보내지 않는지 설명합니다.">
+  <link rel="canonical" href="https://mmnt-writing.github.io/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://mmnt-writing.github.io/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://mmnt-writing.github.io/en/privacy.html">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icon-256.png">
+  <meta property="og:title" content="개인정보 처리방침 - mmnt">
+  <meta property="og:image" content="https://mmnt-writing.github.io/assets/og.png">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/icon-256.png" alt="" width="30" height="30">mmnt</a>
+      <nav class="nav">
+        <a href="./#download">다운로드</a>
+        <a href="en/privacy.html" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="narrow doc">
+    <h1>개인정보 처리방침</h1>
+    <p class="date">시행일 2026년 10월 13일</p>
+
+    <p class="summary">mmnt는 계정이 없고, 이름이나 이메일 같은 개인 정보를 요구하지 않습니다. 여러분이 쓴 글은 기기 안에만 저장되며 어떤 형태로도 서버에 전송되지 않습니다. 앱이 바깥으로 보내는 것은 설정에서 끌 수 있는 익명 사용 통계와 오류 리포트, 그리고 새 버전 확인 요청뿐입니다.</p>
+
+    <h2>1. 글과 설정</h2>
+    <p>작성한 글, 작성 이력과 통계, 앱 설정은 모두 사용자의 기기 안에 있는 로컬 데이터베이스에 저장됩니다. 이 데이터는 사용자의 기기를 떠나지 않습니다. 완료된 글은 설정한 보관 기간(기본 30일)이 지나면 기기에서 영구 삭제되며, 사용자가 영구 보관으로 표시한 글만 남습니다. 앱을 삭제하면 이 데이터도 함께 삭제됩니다.</p>
+
+    <h2>2. 익명 사용 통계</h2>
+    <p>어떤 기능이 얼마나 쓰이는지 파악하기 위해 익명 사용 통계를 보냅니다. 이 기능은 기본으로 켜져 있으며, 설정의 "익명 사용 통계 보내기"를 끄면 즉시 중단됩니다. 끈 뒤에는 아무 데이터도 만들지도, 쌓아 두지도 않습니다.</p>
+    <p>보내는 항목은 다음이 전부입니다.</p>
+    <table>
+      <tr><th>설치 ID</th><td>최초 실행 때 만든 무작위 값입니다. 사용자나 기기를 알아볼 수 없으며, 앱을 삭제하고 다시 설치하면 새 값이 됩니다.</td></tr>
+      <tr><th>앱 버전, 플랫폼</th><td>예: 0.1.0, macos</td></tr>
+      <tr><th>운영체제 주 버전</th><td>예: 26. 세부 버전은 보내지 않습니다.</td></tr>
+      <tr><th>사용 이벤트</th><td>앱 실행, 글쓰기 시작과 완료, 설정 변경 같은 동작의 종류입니다.</td></tr>
+      <tr><th>구간값</th><td>글 길이와 작성 시간은 정확한 값 대신 "50~149 단어", "3~5분" 같은 구간으로만 보냅니다.</td></tr>
+    </table>
+    <p>글의 본문이나 일부, 정확한 글자 수와 단어 수, 이름, 이메일, 기기 이름, 언어 설정, 위치는 보내지 않습니다. 통계는 PostHog(EU 서버)에 저장되며, 개인별 프로필을 만들지 않고 IP 주소는 수신 즉시 폐기하도록 설정되어 있습니다.</p>
+
+    <h2>3. 처리 위탁과 국외 이전</h2>
+    <p>위 통계와 오류 리포트의 저장과 분석은 PostHog에 맡기며, 데이터는 국외 서버에 보관됩니다. 설정에서 "익명 사용 통계 보내기"를 끄면 이 이전도 함께 중단됩니다.</p>
+    <table>
+      <tr><th>이전받는 자</th><td>PostHog, Inc. (<a href="https://posthog.com/privacy">개인정보 보호정책</a>)</td></tr>
+      <tr><th>이전되는 국가</th><td>독일 (PostHog EU 클라우드)</td></tr>
+      <tr><th>이전 항목</th><td>2항의 익명 통계 항목과 4항의 오류 리포트</td></tr>
+      <tr><th>이전 시점과 방법</th><td>앱을 사용하는 동안 인터넷을 통해 주기적으로 전송</td></tr>
+      <tr><th>이용 목적</th><td>기능 사용 현황 파악과 오류 원인 분석</td></tr>
+      <tr><th>보유 기간</th><td>수집일로부터 1년. 개인별 프로필은 만들지 않습니다.</td></tr>
+    </table>
+
+    <h2>4. 오류 리포트</h2>
+    <p>앱 안에서 처리되지 않은 오류가 생기면 오류의 종류, 메시지, 그리고 어느 코드에서 났는지 알려 주는 스택 추적 정보를 위 통계와 같은 경로로 보냅니다. 메시지에 포함될 수 있는 홈 폴더 경로는 가린 뒤 보내며, 글 내용은 포함되지 않습니다. "익명 사용 통계 보내기"를 끄면 오류 리포트도 함께 꺼집니다.</p>
+
+    <h2>5. 새 버전 확인</h2>
+    <p>앱은 시작할 때, 그리고 설정에서 직접 확인할 때 GitHub에 올려 둔 버전 정보 파일을 내려받습니다. 이 요청에는 앱이 추가하는 정보가 없지만, 일반적인 인터넷 접속과 마찬가지로 GitHub가 IP 주소 같은 접속 기록을 남길 수 있습니다. 이에 대해서는 <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보 보호 정책</a>이 적용됩니다.</p>
+
+    <h2>6. 이 웹사이트</h2>
+    <p>이 사이트는 GitHub Pages로 제공되며, 방문자 분석 도구나 쿠키를 사용하지 않습니다. 다운로드 버튼의 버전 표시는 GitHub에 있는 버전 정보 파일을 읽어 채우므로, 이때도 위와 같은 GitHub 접속 기록이 남을 수 있습니다.</p>
+
+    <h2>7. 수집하지 않는 것</h2>
+    <ul>
+      <li>계정, 이름, 이메일 주소, 전화번호</li>
+      <li>글의 본문과 그로부터 계산한 원시 값</li>
+      <li>기기 이름, 정밀한 운영체제 버전, 언어와 지역 설정</li>
+      <li>위치 정보, 연락처, 다른 앱의 데이터</li>
+    </ul>
+
+    <h2>8. 보관과 삭제</h2>
+    <p>익명 통계는 사용자와 연결할 수 있는 정보를 담고 있지 않으므로, 특정 사용자의 데이터만 골라 삭제하는 것은 불가능합니다. 더 이상 보내고 싶지 않다면 설정에서 끄면 되고, 앱을 삭제하면 설치 ID가 사라져 이후 데이터와 이어지지 않습니다.</p>
+
+    <h2>9. 이용 조건</h2>
+    <p>mmnt는 동작이나 품질을 보증하지 않습니다. 글은 설계상 보관 기간이 지나면 삭제되므로, 남겨야 할 글은 영구 보관으로 표시하거나 따로 복사해 두시기 바랍니다. 소프트웨어 오류나 기기 문제로 생긴 글의 손실을 포함해, 앱 사용으로 발생한 손해에 대해 개발자는 책임을 지지 않습니다.</p>
+
+    <h2>10. 개인정보 보호책임자</h2>
+    <p>개인정보 처리에 관한 문의, 열람·정정·삭제 요구, 불만 처리는 mmnt 개발자가 직접 맡습니다. 이메일 mmnt.writing@gmail.com으로 보내 주시면 지체 없이 답변합니다. 공개해도 괜찮은 일반 문의는 <a href="https://github.com/mmnt-writing/mmnt-releases/issues">GitHub Issues</a>를 이용하셔도 됩니다.</p>
+
+    <h2>11. 권익 침해 구제</h2>
+    <p>개인정보 침해에 대한 신고나 상담이 필요하면 아래 기관에 문의할 수 있습니다. 대한민국 밖에 계신 분은 거주 국가의 개인정보 감독기관에 문의하실 수 있습니다.</p>
+    <ul>
+      <li>개인정보침해신고센터 (한국인터넷진흥원): 국번 없이 118, <a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a></li>
+      <li>개인정보 분쟁조정위원회: 1833-6972, <a href="https://www.kopico.go.kr">kopico.go.kr</a></li>
+    </ul>
+
+    <h2>12. 변경과 문의</h2>
+    <p>이 방침이 바뀌면 이 페이지의 시행일을 갱신합니다. 수집 항목이 늘어나는 변경은 앱 업데이트 안내에도 함께 적습니다. 질문이나 문의는 <a href="https://github.com/mmnt-writing/mmnt-releases/issues">GitHub Issues</a> 또는 mmnt.writing@gmail.com으로 보내 주세요.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 mmnt</span>
+      <nav>
+        <a href="./">소개</a>
+        <a href="https://github.com/mmnt-writing/mmnt-releases/issues">문의</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
